@@ -1,0 +1,12 @@
+https://github.com/lyhuynh130195/codgym
+
+
+1. Ði d?n trang: https://github.com
+2. Nh?n vào m?c "New repository" d? b?t d?u t?o m?t Repository m?i:
+3. Trong màn hình t?o Repository m?i, chúng ta di?n tên c?a d? án m?i vào.Sau dó nh?n và nút "Create repository".  4. Sau khi dã t?o du?c Remote Repository trên GitHub, bây gi? chúng ta s? m? c?a s? Terminal lên d? t?o Local Repository và d?ng b? nó t?i Remote Repository trên.
+5. Chuy?n Terminal d?n thu m?c "my-new-project" v?a t?o và s? d?ng l?nh git init d? kh?i t?o Repository m?i.
+6. Ti?p theo, s? d?ng l?nh git remote add origin d? k?t n?i t?i Remote Repository (chú ý s? d?ng dúng du?ng d?n c?a Repository mà b?n v?a t?o)
+7. Trong thu m?c "my-new-project", chúng ta t?o m?t file m?i có tên là "README.md". Ðây là file dùng d? ch?a mô t? v? d? án này, h?u h?t t?t c? các Repository d?u có file này d? gi?i thi?u cho ngu?i khác bi?t v? m?c dích c?a d? án. Chúng ta có th? vi?t m?t n?i dung b?t k? vào file này.
+8. S? d?ng câu l?nh git add d? dua file README.md vào trong ch? m?c c?a Git.
+9. S? d?ng câu l?nh git commit d? luu l?i các thay d?i.
+10. S? d?ng câu l?nh git push d? d?y các thay d?i ? Local Repository lên trên Remote Repository.

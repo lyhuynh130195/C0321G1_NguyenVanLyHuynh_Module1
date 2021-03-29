@@ -1,0 +1,4 @@
+1.vao repository can clone ve
+2. Nh?n vào nút "Clone or download" r?i copy du?ng d?n c?a Repository
+3. M? màn hình Terminal trên máy tính c?a mình, di chuy?n d?n thu m?c mình mu?n ch?a các Repository (s? d?ng l?nh cd).
+4. Dùng l?nh git clone d? sao chép Repository v? máy c?a mình
