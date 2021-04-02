@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <script src="thuattoan.js"></script>
     <style>
 
         td {
@@ -65,7 +64,7 @@
         </tr>
         <tr>
             <td><input type="button" id="1" value="1" onclick="showExp(this.value)"></td>
-            <td><input type="button" id="2" value="2" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="2" value="3" onclick="showExp(this.value)"></td>
             <td><input type="button" id="3" value="3" onclick="showExp(this.value)"></td>
             <td><input type="button" id="+" value="+" onclick="showExp(this.value)"></td>
         </tr>
@@ -74,7 +73,6 @@
             </td>
             <td><input type="button" id="." value="." onclick="showExp(this.value)"></td>
             <td><input type="button" id="=" value="=" onclick="calculator()"></td>
-
         </tr>
     </table>
 </form>
@@ -84,7 +82,8 @@
     }
 
     function calculator() {
-        document.getElementById('result').value = eval(document.getElementById('result').value)
+        let v = document.getElementById('result').value;
+        document.getElementById('result').value = eval(v);
     }
 </script>
 
