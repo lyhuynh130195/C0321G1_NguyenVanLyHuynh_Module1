@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="thuattoan.js"></script>
+    <style>
+
+        td {
+            width: 20px;
+            align: center;
+        }
+
+        input {
+            width: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+
+        input:hover {
+            transform: scale(1.3)
+        }
+
+
+        form table {
+            background-color: white;
+            width: auto;
+            margin: 0px auto;
+            border-radius: 10px;
+            border: 2px black solid;
+            padding: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+        }
+    </style>
+
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" id="result" style="width: 120px;" value="">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="reset" id="reset" value="AC" style="width: 60px"></td>
+
+            <td><input type="button" id="%" value="%" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="/" value="/" onclick="showExp(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="7" value="7" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="8" value="8" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="9" value="9" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="*" value="*" onclick="showExp(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="4" value="4" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="5" value="5" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="6" value="6" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="-" value="-" onclick="showExp(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="1" value="1" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="2" value="2" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="3" value="3" onclick="showExp(this.value)"></td>
+            <td><input type="button" id="+" value="+" onclick="showExp(this.value)"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" id="0" value="0" style="width: 60px" onclick="showExp(this.value)">
+            </td>
+            <td><input type="button" id="." value="." onclick="showExp(this.value)"></td>
+            <td><input type="button" id="=" value="=" onclick="calculator()"></td>
+
+        </tr>
+    </table>
+</form>
+<script>
+    function showExp(value) {
+        document.getElementById('result').value += (value);
+    }
+
+    function calculator() {
+        document.getElementById('result').value = eval(document.getElementById('result').value);
+    }
+</script>
+</body>
