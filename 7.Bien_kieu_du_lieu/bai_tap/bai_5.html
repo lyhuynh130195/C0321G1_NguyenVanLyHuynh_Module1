@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<label type="b">Amount</label><br>
+<input type="text" name="name" id="num">
+</form>
+<label>From currency</label>
+<select id="t1">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<label>To current</label>
+<select id="t2">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<button type="button" onclick="exchange()">Convert</button>
+<br>
+<br>
+<label id="result"></label>
+<script>
+    function exchange() {
+        let kq;
+        let money = document.getElementById("num").value;
+        let t1 = document.getElementById("t1").value;
+        let t2 = document.getElementById("t2").value;
+        if (t1 == "VND" && t2 == "USD") {
+            kq = money / 23000;
+        } else if (t1 == "USD" && t2 == "VND") {
+            kq = money * 23000;
+        } else {
+            kq = money;
+        }
+        document.getElementById("result").innerText = "Result  = " + kq;
+    }
+
+</script>
+</body>
+</html>

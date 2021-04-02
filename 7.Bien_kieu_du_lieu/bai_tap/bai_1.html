@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+    let inputPhysics;
+    let inputChemistry;
+    let inputBiology;
+    inputPhysics=prompt("Enter your point physics");
+    inputChemistry=prompt("Enter your point chemistry");
+    inputBiology=prompt("Enter your point biology");
+    let physics=parseInt(inputPhysics);
+    let chemistry=parseInt(inputChemistry);
+    let biology=parseInt(inputBiology);
+    let total=physics+chemistry+biology;
+    let medium=total/3;
+    document.write("total=    "+total);
+    document.write("<br>");
+    document.write("medium=   "+medium);
+</script>
+</body>
+</html>
