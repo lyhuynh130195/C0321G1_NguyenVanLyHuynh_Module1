@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập số mét :</h1>
+<input type="text" id="met">
+<button type="button" onclick="change()">ĐỔI</button>
+<script>
+    function change() {
+        let ft=parseFloat(document.getElementById("met").value)*3.2808;
+        alert(ft+" feet")
+    }
+</script>
+</body>
+</html>

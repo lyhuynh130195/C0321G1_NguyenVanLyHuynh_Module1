@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập vào 1 số để kiểm tra " id="num">
+<button type="button" onclick="tuoi()">KIểm tra</button>
+<p id="result"></p>
+<script>
+    function tuoi() {
+        let numFloat = parseFloat(document.getElementById("num").value);
+        let numInt = parseInt(document.getElementById('num').value);
+        let num = numFloat - numInt;
+        if (num == 0) {
+            if (numInt > 0 && numInt < 120) {
+                document.getElementById("result").innerText = numFloat + " là tuổi cuả một người";
+            } else {
+                document.getElementById("result").innerText = numFloat + " không là tuổi 1 ngừoi";
+            }
+
+        } else {
+            document.getElementById("result").innerText = numFloat + " không phải là tuổi 1 người";
+        }
+    }
+</script>
+</body>
+</html>

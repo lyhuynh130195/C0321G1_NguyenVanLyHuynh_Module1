@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập doanh số bán hàng :</h1>
+<input type="text" id="sales">
+<input type="button" value="Check" onclick="rate()">
+<br>
+<label>Giá mỗi sản phẩm 100USD</label>
+<br>
+<label>Doanh số lơn hơn hoặc bằng 1000 hoa hồng 10% doanh thu</label><br>
+<label>Doanh số lơn hơn hoặc bằng 500 hoa hồng 5% doanh thu</label><br>
+<label>Doanh số nhỏ hơn 500 hoa hồng 2% doanh thu</label><br>
+</body>
+<script>
+    function rate() {
+        let productValue=100;
+        let sales = document.getElementById("sales").value;
+        if (sales >= 1000) {
+            let interestRate=sales*10/100*100;
+           alert(interestRate+" USD")
+        }else if(sales>=500){
+            let interestRate=sales*5/100*100;
+            alert(interestRate +" USD")
+        }else{
+            let interestRate=sales*2/100*100;
+            alert(interestRate+" USD")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập điểm kiểm tra :</label>
+<input type="text" id="kiemtra">
+<br>
+<br>
+<label>Nhập điểm giữa kì :</label>
+<input type="text" id="giuaki">
+<br>
+<br>
+<label>Nhập điểm cuối kì :</label>
+<input type="text" id="cuoiki">
+<br>
+<br>
+<input type="button" value="Đánh giá" onclick="kq()">
+</body>
+<script>
+    function kq() {
+        let kt = parseFloat(document.getElementById("kiemtra").value);
+        let gk = parseFloat(document.getElementById("giuaki").value);
+        let ck = parseFloat(document.getElementById("cuoiki").value);
+        let tb = (kt + gk * 2 + ck * 3) / 6;
+        if (tb >= 9) {
+            alert("giỏi")
+        } else if (tb >= 7.5) {
+            alert("khá")
+        } else if (tb >= 5) {
+            alert("trung bình")
+        } else {
+            alert("yếu")
+        }
+    }
+</script>
+</html>

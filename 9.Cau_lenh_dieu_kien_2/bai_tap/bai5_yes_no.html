@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<input type="button" value="Yes" onclick="yes()">
+<input id="not" type="button" value="No" onmouseover="no()" style="position: absolute ;left:150px;top:80px">
+<script>
+    function yes() {
+        alert("<3")
+    }
+
+    function no() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("not").style.left = x + "px";
+        document.getElementById("not").style.top = y + "px";
+    }
+</script>
+</body>
+</html>

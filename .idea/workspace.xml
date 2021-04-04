@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7e5e09-abcb-4257-ba81-2cba6992bf16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/bai_tap_caculator.cach2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/swich_case3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/swich_case_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_if_else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_nam_nhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_swtich_case1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/toan_tu_3_ngoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/toan_tu_3_ngoi2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai5_yes_no.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_1_bmi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_tap_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/thuc_hanh/thuc_hanh_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/thuc_hanh/thuc_hanh_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/bai_tap_caculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/bai_tap_caculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/may_tinh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +77,15 @@
       <workItem from="1617369529167" duration="2124000" />
       <workItem from="1617372175287" duration="619000" />
       <workItem from="1617372924162" duration="19000" />
-      <workItem from="1617372964039" duration="6315000" />
+      <workItem from="1617372964039" duration="6374000" />
+      <workItem from="1617440171434" duration="523000" />
+      <workItem from="1617440733941" duration="92000" />
+      <workItem from="1617442973846" duration="7056000" />
+      <workItem from="1617451177585" duration="7796000" />
+      <workItem from="1617460125158" duration="7713000" />
+      <workItem from="1617468901182" duration="306000" />
+      <workItem from="1617506778356" duration="1230000" />
+      <workItem from="1617531754936" duration="12995000" />
     </task>
     <servers />
   </component>
@@ -58,13 +93,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="368" y="0" key="SettingsEditor" timestamp="1617375235110">
+    <state x="339" y="157" key="run.anything.popup" timestamp="1617537170784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="368" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1617375235110" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1617377538406">
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1617537170784" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1617535721374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1617377538406" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1617535721374" />
   </component>
 </project>

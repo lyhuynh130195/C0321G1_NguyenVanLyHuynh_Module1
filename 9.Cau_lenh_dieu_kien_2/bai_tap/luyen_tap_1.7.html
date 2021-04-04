@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập vào số phút gọi :</label>
+<input type="text" id="times">
+<br>
+<br>
+<label>NHập vào số tin nhắn</label>
+<input type="text" id="mess">
+<br>
+<p>Giá cước phút gọi :2000VND/phút</p>
+<p>Giá cước tin nhắn :200VND/tin nhan</p>
+<br>
+<input type="button" value="Kiểm tra" onclick="totalMoney()">
+<script>
+    function totalMoney() {
+        let a = parseFloat(document.getElementById("times").value) * 2000;
+        let b = parseFloat(document.getElementById("mess").value) * 200;
+        let total = a + b;
+        alert("Tổng số tiền cước điện thoại là :" + total + " VND")
+
+    }
+</script>
+</body>
+</html>

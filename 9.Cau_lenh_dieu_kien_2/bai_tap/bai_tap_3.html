@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form table {
+            background-color: white;
+            margin: 0px auto;
+            border: 2px black solid;
+            padding: 10px;;
+        }
+
+        .h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" id="result" style="width: 100px;" value="">
+            </td>
+        </tr>
+        <tr>
+            <td><input class="h1" type="button" value="1" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="2" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="3" onclick="showE(this.value);"></td>
+            <td><input style="width: 22px" class="h1" type="button" value="+" onclick="showE(this.value);"></td>
+        </tr>
+        <tr>
+            <td><input class="h1" type="button" value="4" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="5" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="6" onclick="showE(this.value);"></td>
+            <td><input style="width: 22px" class="h1" type="button" value="-" onclick="showE(this.value);"></td>
+        </tr>
+        <tr>
+            <td><input class="h1" type="button" value="7" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="8" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="9" onclick="showE(this.value);"></td>
+            <td><input style="width: 22px" class="h1" type="button" value="*" onclick="showE(this.value);"></td>
+        </tr>
+        <tr>
+            <td><input style="width: 23px" class="h1" type="reset" value="C" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="0" onclick="showE(this.value);"></td>
+            <td><input class="h1" type="button" value="=" onclick="caculator();"></td>
+            <td><input style="width: 22px" class="h1" type="button" value="/" onclick="showE(this.value);"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function showE(value) {
+        document.getElementById("result").value += (value)
+    }
+
+    function caculator() {
+        // let v = document.getElementById('result').value;
+        // document.getElementById('result').value = eval(v);
+        document.getElementById('result').value = eval(document.getElementById('result').value);
+    }
+</script>
+</body>
+</html>

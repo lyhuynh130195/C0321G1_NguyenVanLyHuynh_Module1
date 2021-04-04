@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập số tuổi :</label>
+<input type="text" id="age">
+<br>
+<input type="button" value="Check" onclick="a()">
+<h1 id="1"></h1>
+<script>
+    function a() {
+        let age = parseInt(document.getElementById("age").value);
+        if (age >= 15) {
+            document.getElementById("1").innerText = 'du tuoi de hoc lop 10'
+        } else {
+            document.getElementById("1").innerText = 'khong du tuoi hoc lop 10'
+        }
+    }
+</script>
+</body>
+</html>

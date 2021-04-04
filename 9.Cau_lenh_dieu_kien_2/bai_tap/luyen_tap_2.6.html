@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập vào a">
+<input type="text" id="b" placeholder="Nhập vào b">
+<button type="button" onclick="tinh()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function tinh() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if (a == 0) {
+            if (b === 0) {
+                document.getElementById("result").innerText = "Phương trình vô số nghiệm";
+            } else {
+                document.getElementById('result').innerText = "Phương trình vô nghiệm"
+            }
+        } else {
+            let x = -b / a;
+            document.getElementById("result").innerText = "Phương trình có nghiệm duy nhất x = " + x;
+        }
+    }
+</script>
+</body>
+</html>

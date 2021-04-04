@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập vào hệ số phương trình bậc 2 :</h1>
+<input type="text" id="a" placeholder="Nhập vào a">
+<input type="text" id="b" placeholder="Nhập vào b">
+<input type="text" id="c" placeholder="Nhập vào c">
+<input type="button" value="Kiểm tra" onclick="ptb2()">
+<p id="result"></p>
+<script>
+    function ptb2() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let delta = (b * b - 4 * a * c);
+        let canDelta = Math.sqrt(delta);
+
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+                    document.getElementById("result").innerText = "phương trình vô số nghiêm";
+                } else {
+                    document.getElementById("result").innerText = "phương trình vô nghiệm";
+                }
+            } else {
+                let x = -c / b;
+                document.getElementById("result").innerText = "phương trình có nghiệm duy nhất la " + x;
+            }
+        } else if (delta < 0) {
+            document.getElementById("result").innerText = "phương trình vô nghiệm";
+        } else if (delta == 0) {
+            let x = -b / 2 * a;
+            document.getElementById("result").innerText = "phương trình có nghiệm duy nhât x = " + x;
+
+        } else {
+            let x1 = (-b + canDelta) / 2 * a;
+            let x2 = (-b - canDelta) / 2 * a;
+            document.getElementById("result").innerText = "phương trình có 2 nghiêm x1,x2 là :" + x1 + " ; " + x2;
+        }
+    }
+</script>
+</body>
+</html>

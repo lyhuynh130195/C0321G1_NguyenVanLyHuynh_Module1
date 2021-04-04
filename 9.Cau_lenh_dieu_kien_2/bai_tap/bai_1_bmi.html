@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label> Enter your weight</label>
+    <input type="text" id="weight">
+    <br>
+    <br>
+    <label>Enter your height</label>
+    <input type="text" id="height">
+    <br>
+    <br>
+    <input type="button" value="tinh" onclick="tinh()"/>
+</form>
+<script>
+    function tinh() {
+        let weight = parseFloat(document.getElementById("weight").value);
+        let height = parseFloat(document.getElementById("height").value);
+        let bmi = parseFloat(weight / (height * height));
+        if (bmi >= 30) {
+            alert("obese");
+        } else if (bmi >= 25) {
+            alert("Overweight")
+        } else if (bmi >= 18.5) {
+            alert("Normal")
+        } else {
+            alert("underweight")
+        }
+    }
+</script>
+</body>
+</html>
