@@ -5,32 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<label>Nhập vào số thứ nhất :</label>
-<input type="text" id="num1">
-<label>Nhập vào số thứ hai :</label>
-<input type="text" id="num2">
-<label>Nhập vào số thứ ba :</label>
-<input type="text" id="num3">
-<br>
-<br>
-<input style="color: blue" type="button" value="Kiem tra" onclick="check()">
-</body>
 <script>
-    function check() {
-        let num1 = document.getElementById("num1").value;
-        let num2 = document.getElementById("num2").value;
-        let num3 = document.getElementById("num3").value;
-        if (num1 > num2) {
-            if (num1 > num3) {
-                alert(num1 + "  la so lon nhat");
-            } else {
-                alert(num3 + "  la so lon nhat");
-            }
-        } else if (num2 > num3) {
-            alert(num2 + "  la so lon nhat");
+    let num1 = parseInt(prompt("nhập vào số thứ nhất"));
+    let num2 = parseInt(prompt("nhập vào số thứ hai"));
+    let num3 = parseInt(prompt("nhập vào số thứ thu 3"));
+
+    if (num1 > num2) {
+        if (num1 > num3) {
+            alert(num1 + "  là số lớn nhất");
         } else {
-            alert(num3 + "  la so lon nhat");
+            alert(num3 + "  là số lớn nhất");
         }
+    } else if (num2 > num3) {
+        alert(num2 + "  là số lớn nhất");
+    } else {
+        alert(num3 + "  là số lớn nhất");
     }
 </script>
+</body>
+
 </html>

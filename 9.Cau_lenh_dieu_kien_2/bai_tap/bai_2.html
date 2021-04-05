@@ -6,12 +6,12 @@
 </head>
 <body>
 <form>
-    <input type="text" id="n1">
-    <input type="button" value="Tính số ngày" id="t1" onclick="num1();"><br>
+    <input type="text" id="n1" placeholder="Nhập vào tháng muốn kiểm tra">
+    <input type="button" value="Kiểm tra số ngày" id="t1" onclick="num1();"><br>
     <h2 id="f1"></h2><br>
     <p>Và</p><br>
-    <input type="text" id="n2">
-    <input type="button" value="Tính số ngày" id="t2" onclick="num2();"><br>
+    <input type="text" id="n2" placeholder="Nhập vào tháng muốn kiểm tra">
+    <input type="button" value="Kiểm tra số ngày" id="t2" onclick="num2();"><br>
     <h2 id="f2"></h2><br>
 </form>
 <script>
@@ -40,31 +40,7 @@
                 document.getElementById('f1').innerText = "Tháng này không tồn tại"
         }
     }
-    function num1() {
-        let a = parseInt(document.getElementById("n1").value)
-        switch (a) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                document.getElementById("f1").innerText = "Tháng " + a + "  có 31 ngày";
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                document.getElementById("f1").innerText = "Tháng  " + a + "   có 30 ngày"
-                break;
-            case 2:
-                document.getElementById("f1").innerText = "Tháng   " + a + "   có 28 hoặc 29 ngày"
-                break;
-            default:
-                document.getElementById('f1').innerText = "Tháng này không tồn tại"
-        }
-    }
+
     function num2() {
         let a = parseInt(document.getElementById("n2").value)
         switch (a) {

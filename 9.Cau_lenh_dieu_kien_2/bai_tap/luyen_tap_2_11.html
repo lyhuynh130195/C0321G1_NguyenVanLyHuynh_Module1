@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính số thuế bạn phải nạp</h1>
+<input type="text" id="ttn" placeholder="Tổng thu nhập">
+<input type="text" id="mt" placeholder="Các khoản miễn trừ">
+<br>
+<br>
+<input type="button" value="Kiểm tra" onclick="thue()">
+<script>
+    function thue() {
+        let ttn = parseFloat(document.getElementById("ttn").value);
+        let mt = parseFloat(document.getElementById("mt").value);
+        let tnct = ttn - mt;
+        if (tnct <= 5000000) {
+            let ttncn = tnct * 5 / 100;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + "VND");
+        } else if (tnct <= 10000000) {
+            let ttncn = tnct * 10 / 100 - 250000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + " VND");
+        } else if (tnct <= 18000000) {
+            let ttncn = tnct * 15 / 100 - 750000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + " VND");
+        } else if (tnct <= 32000000) {
+            let ttncn = tnct * 20 / 100 - 1600000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + "VND");
+        } else if (tnct <= 52000000) {
+            let ttncn = tnct * 25 / 100 - 3250000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + " VND");
+        } else if (tnct <= 80000000) {
+            let ttncn = tnct * 30 / 100 - 5850000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + " VND");
+        } else {
+            let ttncn = tnct * 35 / 100 - 9850000;
+            alert("thuế thu nhập cá nhân cần đóng  :" + ttncn + "VND");
+        }
+    }
+</script>
+</body>
+</html>

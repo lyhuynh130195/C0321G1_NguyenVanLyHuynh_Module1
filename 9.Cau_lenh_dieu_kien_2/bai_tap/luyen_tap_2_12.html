@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính số tiền lãi ngân hàng</h1>
+<input type="text" id="money" placeholder="Số tiền gửi">
+<input type="text" id="interest" placeholder="%Lãi">
+<input type="text" id="month" placeholder="Số tháng">
+<br><br>
+<input type="button" onclick="bank()" value="Kết quả">
+<h3 id="3"></h3>
+<script>
+    function bank() {
+        let money = parseFloat(document.getElementById("money").value);
+        let interest = parseFloat(document.getElementById("interest").value);
+        let month = parseFloat(document.getElementById("month").value);
+        let i = 1;
+        while (i <= month) {
+            money+=money*interest/100;
+            i++;
+        }
+        document.getElementById("3").innerText = "số tiền thu về là " + money.toFixed(2)+"USD";
+    }
+</script>
+</body>
+</html>

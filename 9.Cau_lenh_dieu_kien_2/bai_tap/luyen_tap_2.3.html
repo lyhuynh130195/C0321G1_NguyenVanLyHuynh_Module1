@@ -5,16 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Nhập độ dài cạnh hình vuông(m) :</h1>
-<input type="text" id="canh">
-<button type="button" onclick="caculate()">Tính</button>
-<h2 id="area"></h2>
 <script>
-    function caculate() {
-        let a = parseFloat(document.getElementById("canh").value);
-        let area = a * a;
-        document.getElementById("area").innerText = "Diện tích hình vuông là : " + area + "m2";
-    }
+    let a = parseFloat(prompt("Nhập giá trị cạnh hình vuông"));
+    let area = a * a;
+    alert("Diện tích hình vuông là : " + area + "m2");
 </script>
 </body>
 </html>

@@ -17,17 +17,16 @@
 </body>
 <script>
     function rate() {
-        let productValue=100;
         let sales = document.getElementById("sales").value;
         if (sales >= 1000) {
-            let interestRate=sales*10/100*100;
-           alert(interestRate+" USD")
-        }else if(sales>=500){
-            let interestRate=sales*5/100*100;
-            alert(interestRate +" USD")
-        }else{
-            let interestRate=sales*2/100*100;
-            alert(interestRate+" USD")
+            let interestRate = sales * 10 / 100 * 100;
+            alert(interestRate + " USD")
+        } else if (sales >= 500) {
+            let interestRate = sales * 5 / 100 * 100;
+            alert(interestRate + " USD")
+        } else {
+            let interestRate = sales * 2 / 100 * 100;
+            alert(interestRate + " USD")
         }
     }
 </script>

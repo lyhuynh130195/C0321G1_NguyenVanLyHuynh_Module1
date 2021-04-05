@@ -5,15 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Nhập giá trị độ C :</h1>
-<input type="text" id="C"><br><br>
-<button type="button" onclick="cf()">Đổi</button>
 <script>
-    function cf() {
-        let c=document.getElementById("C").value;
-        let f=c*9/5+32;
-        alert(f+" Độ F");
-    }
+    let c = parseFloat(prompt("Nhập giá trị độ C :"));
+    let f = c * 9 / 5 + 32;
+    alert(c + " Độ C = " + f + " Độ F");
 </script>
 </body>
 </html>

@@ -2,37 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7e5e09-abcb-4257-ba81-2cba6992bf16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/swich_case3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/swich_case_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_if_else.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_nam_nhuan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/thuc_hanh_swtich_case1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/toan_tu_3_ngoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Cau_lenh_dieu_kien/thuc_hanh.1/toan_tu_3_ngoi2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai5_yes_no.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_1_bmi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_tap_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/thuc_hanh/thuc_hanh_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/thuc_hanh/thuc_hanh_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2_10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2_11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2_12.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/7.Bien_kieu_du_lieu/bai_tap/may_tinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.6.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_1.6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/9.Cau_lenh_dieu_kien_2/bai_tap/luyen_tap_2.4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -86,6 +70,11 @@
       <workItem from="1617468901182" duration="306000" />
       <workItem from="1617506778356" duration="1230000" />
       <workItem from="1617531754936" duration="12995000" />
+      <workItem from="1617546431350" duration="5767000" />
+      <workItem from="1617554138715" duration="3514000" />
+      <workItem from="1617558902767" duration="39000" />
+      <workItem from="1617560811290" duration="1426000" />
+      <workItem from="1617562250551" duration="1544000" />
     </task>
     <servers />
   </component>
@@ -93,6 +82,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1617562248101">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1617562248101" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1617537170784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

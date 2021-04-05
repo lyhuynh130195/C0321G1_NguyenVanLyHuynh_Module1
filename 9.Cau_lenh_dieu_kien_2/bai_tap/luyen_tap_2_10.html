@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập số kwh điện tiêu thụ</h1>
+<input type="text" id="kwh">
+<input type="button" value="Tính tiền" onclick="show()">
+<h3 id="result"></h3>
+<script>
+    function show() {
+        let kw = parseFloat(document.getElementById("kwh").value);
+        if (kw <= 50) {
+            let money = kw * 1678;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + " VND"
+        } else if (kw <= 100) {
+            let money = kw * 1734;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + " VND"
+        } else if (kw <= 200) {
+            let money = kw * 2014;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + " VND"
+        } else if (kw <= 300) {
+            let money = kw * 2536;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + " VND"
+        } else if (kw <= 400) {
+            let money = kw * 2834;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + " VND"
+        } else {
+            let money = kw * 2927;
+            document.getElementById("result").innerText = "Tổng số tiền = " + money + "VND"
+        }
+    }
+</script>
+</body>
+</html>
