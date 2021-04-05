@@ -8,8 +8,12 @@
 <script>
     let wight = parseFloat(prompt("Nhập giá trị cạnh dài :"));
     let height = parseFloat(prompt("Nhập giá trị cạnh ngắn :"))
-    let area = wight * height;
-    alert("Diện tích hình chữ nhật là :" + area);
+    if (wight > 0 && height > 0) {
+        let area = wight * height;
+        alert("Diện tích hình chữ nhật là :" + area);
+    } else {
+        alert("không hợp lệ");
+    }
 </script>
 </body>
 </html>

@@ -5,16 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="a" placeholder="nhập vào cạnh thứ nhất">
-<input type="text" id="b" placeholder="nhập vào cạnh thứ hai "><br><br>
-<button type="button" onclick="tinh()">Kiểm tra</button>
-<p id="area"></p>
 <script>
-    function tinh() {
-        let wight = parseFloat(document.getElementById("a").value);
-        let height = parseFloat(document.getElementById("b").value);
-        let area = wight * height/2;
-        document.getElementById("area").innerText = "Diện tích tam giác là :" + area;
+
+    let wight = parseFloat(prompt("Nhập vào cạnh thứ nhất"));
+    let height = parseFloat(prompt("Nhập vào cạnh thứ hai"));
+    if (wight > 0 && height > 0) {
+        let area = wight * height / 2;
+        alert("Diện tích tam giác là :" + area);
+    }else {
+        alert("Không hợp lệ");
     }
 </script>
 </body>

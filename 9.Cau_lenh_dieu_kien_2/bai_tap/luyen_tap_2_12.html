@@ -11,7 +11,7 @@
 <input type="text" id="month" placeholder="Số tháng">
 <br><br>
 <input type="button" onclick="bank()" value="Kết quả">
-<h3 id="3"></h3>
+<b id="3"></b>
 <script>
     function bank() {
         let money = parseFloat(document.getElementById("money").value);
@@ -22,7 +22,7 @@
             money+=money*interest/100;
             i++;
         }
-        document.getElementById("3").innerText = "số tiền thu về là " + money.toFixed(2)+"USD";
+        document.getElementById("3").innerText = "số tiền thu về là :" + money.toFixed(2)+"USD";
     }
 </script>
 </body>

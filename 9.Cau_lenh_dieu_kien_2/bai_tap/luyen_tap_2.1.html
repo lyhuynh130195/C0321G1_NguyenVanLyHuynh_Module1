@@ -7,8 +7,10 @@
 <body>
 <script>
     let c = parseFloat(prompt("Nhập giá trị độ C :"));
-    let f = c * 9 / 5 + 32;
-    alert(c + " Độ C = " + f + " Độ F");
+    if (c > -273) {
+        let f = c * 9 / 5 + 32;
+        alert(c + " Độ C = " + f + " Độ F");
+    }
 </script>
 </body>
 </html>

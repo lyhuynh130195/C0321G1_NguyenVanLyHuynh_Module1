@@ -7,8 +7,13 @@
 <body>
 <script>
     let a = parseFloat(prompt("Nhập giá trị cạnh hình vuông"));
-    let area = a * a;
-    alert("Diện tích hình vuông là : " + area + "m2");
+    if (a > 0) {
+        let area = a * a;
+        alert("Diện tích hình vuông là : " + area + "m2");
+    } else {
+        alert("Không hợp lệ")
+    }
+
 </script>
 </body>
 </html>
