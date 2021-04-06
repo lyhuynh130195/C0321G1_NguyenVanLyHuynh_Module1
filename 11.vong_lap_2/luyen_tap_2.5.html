@@ -19,10 +19,11 @@
         let month = parseFloat(document.getElementById("month").value);
         let i = 1;
         while (i <= month) {
-            money += money * interest / 100;
-            i++;
+          money+=money*interest/100;
+          i++;
         }
-        document.getElementById("3").innerText = "số tiền thu về là :" + money.toFixed(2) + "USD";
+        let lai=money-parseFloat(document.getElementById("money").value);
+        document.getElementById("3").innerText = "số tiền lãi thu về là :" + lai.toFixed(2) + "USD";
     }
 </script>
 </body>

@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
     let a = b = 1;
-    let sum;
-    document.write("1" + ";" + "1" + ";")
+    let sum1;
+    let sum2 = 0;
     for (let i = 0; i < 18; i++) {
-        sum = a + b;
+        sum1 = a + b;
         a = b;
-        b = sum;
-        document.write(sum + " ; ");
+        b = sum1;
+        sum2 += b;
     }
+    document.write(sum2+2);
 </script>
 </body>
 </html>

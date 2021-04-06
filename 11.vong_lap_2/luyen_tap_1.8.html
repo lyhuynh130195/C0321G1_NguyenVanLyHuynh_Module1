@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button type="button" id="choi" onclick="game()">Chơi</button>
+<script>
+    function game() {
+        let a = parseInt(prompt("Nhập vào khoảng muốn đoán từ"));
+        let b = prompt(" Đến ");
+        if (a < b) {
+            let c = parseInt(Math.floor(Math.random() * (b - a) + a));
+            console.log(c);
+            while (1 > 0) {
+                let d = parseInt(prompt("Nhập vào giá trị bạn chọn"))
+                if (c == d) {
+                    alert("Chúc mừng");
+                    break;
+                } else if (d < c) {
+                    alert("Số đã nhập nhỏ hơn")
+                } else {
+                    alert("Số đã nhập lớn hơn ")
+                }
+            }
+        } else {
+            alert("Nhập lại")
+        }
+    }
+</script>
+</body>
+</html>

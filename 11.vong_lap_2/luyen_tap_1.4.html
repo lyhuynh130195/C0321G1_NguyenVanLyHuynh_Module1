@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
     let a = b = 1;
     let sum;
-    document.write("1" + ";" + "1" + ";")
-    for (let i = 0; i < 18; i++) {
+    for (i = 0; ; i++) {
         sum = a + b;
         a = b;
         b = sum;
-        document.write(sum + " ; ");
+        if (sum % 5 == 0) {
+            document.write(sum);
+            break;
+        }
     }
 </script>
 </body>
