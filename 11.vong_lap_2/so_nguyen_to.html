@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nums = parseInt(prompt("Nhập số lượng sô nguyên tố cần in ra :"));
+    let count = 0;
+    let n = 2;
+
+    while (count < nums) {
+        let dem = 0;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            document.write(n + " ; ");
+            count++;
+        }
+        n++;
+    }
+</script>
+</body>
+</html>
