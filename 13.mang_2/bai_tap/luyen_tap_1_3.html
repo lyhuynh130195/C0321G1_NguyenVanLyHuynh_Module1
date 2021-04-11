@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = Math.round(Math.random() * 100);
+    }
+    let max = numbers[0];
+    let sum=0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+        sum+=numbers[i];
+    }
+    let tb=(sum)/(numbers.length)
+    document.write(numbers+'<br>');
+    document.write("Số lớn nhất là " + max+"<br>");
+    document.write("Giá trị trung bình là "+tb);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt("Nhập độ dài của mảng")
+    let array1=[];
+    for (let i=0;i<n;i++){
+        array1.push(prompt("nhập vào phần tử của mảng"));
+    }
+    for(let i=0;i<n;i++){
+        if(array1[i]=='-'){
+            array1.splice(i,1,'_');
+        }
+    }
+    document.write(array1);
+
+</script>
+</body>
+</html>

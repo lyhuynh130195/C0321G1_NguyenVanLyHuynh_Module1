@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = Math.round(Math.random() * 100)+' ';
+    }
+    let max = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+    let index = numbers.indexOf(max);
+    document.write(numbers+'<br>')
+    document.write("Số lơn nhất là :" + max + "<br>");
+    document.write("Có index = " + index);
+
+
+</script>
+</body>
+</html>

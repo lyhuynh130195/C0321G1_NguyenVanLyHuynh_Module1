@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    for (let i = 0; i < 10; i++) {
+        x.push(prompt("Nhập vào phần tử "));
+    }
+    let v = prompt("Nhập số bất kì :");
+    let check = x.indexOf(v);
+    if (check !== -1) {
+        alert("v is in the array");
+    } else {
+        alert("v is not in the array")
+    }
+</script>
+</body>
+</html>

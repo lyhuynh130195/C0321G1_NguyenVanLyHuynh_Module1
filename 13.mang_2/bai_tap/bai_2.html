@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1" placeholder="Nhập từ cần tìm kiếm ">
+<button type="button" onclick="tim()">Tìm kiếm</button>
+<script>
+    function tim() {
+        let array1 = ["do", "you", "go", "comments", "up", "dow"];
+        let array2 = ["làm", "bạn", "đi", "bình luận", "lên", "xuống"];
+        let a = document.getElementById('1').value;
+        let index=array1.indexOf(a);
+        if(index !=-1){
+            alert(array2[index]);
+        }else {
+            alert("Không tìm thấy");
+        }
+    }
+</script>
+</body>
+</html>

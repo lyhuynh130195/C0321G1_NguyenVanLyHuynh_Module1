@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let array1 = [];
+    let lengtharray;
+    while (true) {
+        lengtharray = parseInt(prompt("Nhập độ dài mảng "));
+        if (lengtharray > 0) {
+            break;
+        }
+    }
+
+    for (let i = 0; i < lengtharray; i++) {
+        array1[i] = Math.round(Math.random() * 100 - 50)
+    }
+    let dem = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] < 0) {
+            dem++
+        }
+    }
+    document.write(array1 + '<br>');
+    document.write("Có tất cả " + dem + " số nguyên âm trong mảng");
+</script>
+
+
+</body>
+</html>
