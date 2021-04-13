@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Type anthing slowly</h1>
+<textarea id="result" onkeyup="getString()"></textarea>
+<script>
+    function getString() {
+        let str = ("Toi hoc code o codegym").split("");
+        let inputstr = document.getElementById("result").value;
+        let outputstr = new Array(inputstr.length)
+        if (inputstr.length > str.length) {
+            outputstr = [];
+        }
+        for (let i = 0; i < outputstr.length; i++) {
+            outputstr[i] = str[i];
+        }
+        document.getElementById('result').value=outputstr.join('');
+    }
+</script>
+</body>
+</html>

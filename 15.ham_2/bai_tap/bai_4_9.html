@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(array, a) {
+        let dem = 0;
+        for (let i = 0; i < array.length; i++) {
+
+            if (array[i] === a) {
+                dem++
+            }
+        }
+        if (dem === 0) {
+            return -1;
+        } else {
+            return "so lan xua hien "+dem;
+        }
+
+    }
+
+    arrayA = ['a', 'b', 'c', 'j', 'e','a'];
+    let c = prompt('nhap vao')
+    let b = check(arrayA, c);
+    alert(b)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isMin(a, b, c) {
+        let min;
+        if (a < b) {
+            if (a < c) {
+                min= a;
+            } else {
+                min = c;
+            }
+        } else if (b < c) {
+            min = b;
+        } else {
+            min = c
+        }
+        return min;
+    }
+    let c=prompt("nhap 3 so cach nhau dau ,").split(',');
+   alert('Min = '+isMin(c[0],c[1],c[2]))
+
+</script>
+</body>
+</html>

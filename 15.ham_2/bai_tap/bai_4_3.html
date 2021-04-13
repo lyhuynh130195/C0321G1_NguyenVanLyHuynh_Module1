@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFactorial(number) {
+        if (number >= 0) {
+            let i = 1;
+            let factorial = 1;
+            while (i <= number) {
+                factorial *= i;
+                i++;
+            }
+            return factorial;
+        } else {
+            return 'khong ton tai'
+        }
+    }
+
+    let a = parseInt(prompt("nhập vào số nguyên :"));
+    let factorial = isFactorial(a)
+    document.write("Giai thừa = " + factorial);
+</script>
+</body>
+</html>

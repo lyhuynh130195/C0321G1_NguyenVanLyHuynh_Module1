@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="swapArray()">Đảo mảng</button><br>
+<script>
+    let n = null;
+    let array1 = [];
+
+    do {
+        n = prompt("Nhập vào độ dài mảng")
+    } while (n <= 0)
+    for (let i = 0; i < n; i++) {
+        array1[i] = Math.floor(Math.random() * 100)
+    }
+
+    document.write("befor: " + array1 + "<br>");
+
+
+    function swapArray() {
+        array1.reverse();
+        document.write( "after : "+array1);
+    }
+
+
+</script>
+</body>
+</html>

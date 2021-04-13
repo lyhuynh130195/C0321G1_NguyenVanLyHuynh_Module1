@@ -5,18 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+
 <script>
     function calculate(number1, number2) {
         let sum = 0;
         if (number1 > number2) {
-            alert("Số thứ nhất lơn hơn số thứ 2")
+           return "Số thứ nhất lơn hơn số thứ 2";
         } else {
          sum += number1 + number2;
-            document.write(sum);
         }
+        return sum
     }
-    let b = calculate(19, 9);
-
+    let b = calculate(911, 39);
+     document.write(b);
 </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isInteger(a) {
+        let a1 = parseInt(a);
+        let a2 = parseFloat(a);
+        if (a2 > 0) {
+            if (a2 - a1 === 0) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+
+    let n = prompt("Nhập vào số bất kỳ :")
+    let numberInteger = isInteger(n);
+    alert(numberInteger);
+
+</script>
+</body>
+</html>
