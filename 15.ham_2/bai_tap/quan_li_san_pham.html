@@ -1,10 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        td{
+            font-size: 18px;
+        }
+        button{
+            background-color: limegreen;
+            width: 60px;
+            height: 35px;
+            border: 1px;
+            border-radius: 8px;
+            color: white;
+        }
+        input{
+            height: 20px;
+            width: 230px;
+        }
+    </style>
 </head>
 <body>
+<h2>Add New product</h2>
+<input type="text" placeholder="New product" id="add">
+<button onclick="addProduct()">Add</button>
+<h2>Display All Product</h2>
+<h3>Product Name</h3>
+<p id="result"></p>
+<script>
+    let nameProduct = ["Samsung Galaxy s20", "Iphone 6S", "Sony Z1", "Nokia 6","Oppo A71","Xiaomi Note9"];
 
+    function display() {
+        let tableString = '<table>';
+        for (let i = 0; i < nameProduct.length; i++) {
+            tableString += '<tr>';
+            tableString += '<td width="30px" height="50px">' + (i + 1) + '.' + '</td>'
+            tableString += '<td width="200px" height="50px">' + nameProduct[i] + '</td>'
+            tableString += '<td width="150px" height="50px">' + '<button id="del" onclick="editProduct(' + i + ')">' + 'Edit' + '</button>' + '</td>'
+            tableString += '<td width="150px" height="50px">' + '<button id="del" onclick="deleteProduct(' + i + ')">' + 'Delete' + '</button>' + '</td>'
+            tableString += '</tr>';
+        }
+        tableString += '</table>';
+        document.getElementById("result").innerHTML = tableString;
+    }
+
+    display();
+
+    function addProduct() {
+        let newProduct= document.getElementById("add").value;
+        if (newProduct==""){
+            alert("Vui long nhập tên sản phẩm");
+            return
+        }
+        if (nameProduct.indexOf(newProduct) == -1){
+            nameProduct.push(newProduct);
+            display();
+        }else {
+            alert("Sản phẩm bạn nhập đã tồn tại,vui lòng nhập sản phẩm khác");
+        }
+    }
+
+    function editProduct(index) {
+        let newProduct = prompt("Nhập tên mặt hàng thay thế: ");
+        nameProduct[index] = newProduct;
+        display();
+    }
+
+    function deleteProduct(index) {
+        if(confirm("xác nhận xóa")){
+            nameProduct.splice(index,1);
+            display();
+        }
+    }
+</script>
 </body>
 </html>
