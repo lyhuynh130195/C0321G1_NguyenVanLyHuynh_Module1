@@ -12,7 +12,8 @@
 
     do {
         n = prompt("Nhập vào độ dài mảng")
-    } while (n <= 0)
+    } while (n <= 0||isNaN(n))
+
     for (let i = 0; i < n; i++) {
         array1[i] = Math.floor(Math.random() * 100)
     }

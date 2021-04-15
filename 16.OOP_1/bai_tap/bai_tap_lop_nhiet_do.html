@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(tempC) {
+        this.convertF = function () {
+            return tempC*1.8+32;
+        }
+        this.convertK=function () {
+            return tempC+273;
+        }
+    }
+    let temperature=new Temperature(25);
+    let f=temperature.convertF();
+    let k=temperature.convertK();
+    document.write("Độ F :"+f+"; Độ C :"+k)
+</script>
+</body>
+</html>

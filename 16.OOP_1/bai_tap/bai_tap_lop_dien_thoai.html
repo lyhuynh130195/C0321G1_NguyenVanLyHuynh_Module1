@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop mo ta dien thoai</title>
+</head>
+<body>
+<script>
+    let Mobile = function (pins,status) {
+        this.pin = pins;
+        this.status = status;
+        this.memoryMessageTyping = '';
+        this.memoryMessageInbox = [];
+        this.memoryMessageSend = [];
+        this.getPhoneStatus = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                alert( 'tinh trang dien thoai: ' + this.pin + '%' + ' ' + ' ' + ' co ' + this.memoryMessageInbox.length + ' tin nhan moi.')
+            } else if (this.status === 'off'){
+                alert('the phone is turned off') ;
+            }
+        }
+        this.turnPhoneOnOff = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                return this.status = 'off'
+            } else return false;
+        }
+        this.chargePhone = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                return 'on'
+            } else return false;
+        }
+        this.newMessage = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                this.memoryMessageTyping = prompt('nhap noi dung tin nhan');
+            } else return false;
+        }
+        this.receiveMessage = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                let inbox = this.memoryMessageInbox.length;
+                if (inbox > 0){
+                    alert('ban co :' + inbox + 'tin nhan moi')
+                } return inbox;
+            } else return false;
+        }
+        this.sentAMessage = function (object) {
+            if (this.status === 'on'){
+                this.pin --;
+                let content = this.memoryMessageTyping;
+                object.memoryMessageInbox.push(content)
+            } else return false;
+        }
+        this.openInboxMessage = function () {
+            if (this.status === 'on'){
+                this.pin --;
+                alert('noi dung tin nhan moi la: ' + this.memoryMessageInbox)
+            } else return false;
+        }
+        this.openSendMessage = function (object) {
+            if (this.status === 'on'){
+                this.pin --;
+                let message=this.memoryMessageTyping
+                object.memoryMessageSend.push(message)
+                return this.memoryMessageSend
+            } else return false;
+        }
+        if (this.pin === 0 ){ this.status = 'off'}
+    }
+    let nokia = new Mobile(100,'on');
+    let iphone = new Mobile(90,'on');
+    nokia.getPhoneStatus();
+    nokia.newMessage();
+    nokia.sentAMessage(iphone);
+    iphone.getPhoneStatus()
+    iphone.receiveMessage();
+    iphone.openInboxMessage();
+    alert('my iphone '+iphone.pin+' %pin')
+    alert('thư đã gửi của nokia :'+nokia.openSendMessage(nokia))
+
+</script>
+</body>
+</html>
