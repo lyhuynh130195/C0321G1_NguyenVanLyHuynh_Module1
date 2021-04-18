@@ -21,7 +21,9 @@
         for (let i = 2; i < 12; i++) {
             table += '<tr>';
             for (let j = 2; j < 12; j++) {
-                table += '<td style="width: 40px; height: 40px; text-align: center" onclick="playing(' + i + ',' + j + ')">' + array[i][j] + '</td>'
+                table += '' +
+                    '<td style="width: 40px; height: 40px; text-align: center" ' +
+                    'onclick="playing(' + i + ',' + j + ')">' + array[i][j] + '</td>'
             }
             table += '</tr>'
         }
@@ -30,7 +32,9 @@
     }
     function playing(i, j) {
         if (array[i][j] === '') {
+
             array[i][j] = flag;
+
             if (flag === 'X') {
                 flag = 'O';
             } else {

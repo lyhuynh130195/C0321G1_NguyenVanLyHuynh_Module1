@@ -18,8 +18,8 @@
         }
         this.display = function () {
             let ctx = document.getElementById("myCanvas").getContext("2d");
-            ctx.fillRect(0, 0, this.width,this.height);
             ctx.fillStyle = "rgba(255,0,38,0.7)"
+            ctx.fillRect(0, 0, this.width,this.height);
             return ctx
         }
         this.setWidth = function (width) {

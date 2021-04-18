@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="game">game</div>
+
+<script>
+    function Hero(image, top, left, sizeWidth, sizeHeight){
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.width = sizeWidth;
+        this.height = sizeHeight;
+
+        this.getHeroElement = function(){
+            return '<img width="'+ this.width + '"' +
+                ' height="'+ this.height + '"' +
+                ' src="' + this.image +'"' +
+                ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        }
+
+        this.moveRight = function(){
+            this.left += 3;
+            console.log('ok: ' + this.left);
+
+        }
+        this.moveLeft = function () {
+            this.left -= 3;
+            console.log('ok: ' + this.left);
+
+        }
+
+        this.moveDown = function () {
+            this.top += 3;
+            console.log('ok: ' + this.top);
+
+
+        }
+        this.moveUP = function () {
+            this.top -= 3
+            console.log('ok: ' + this.top);
+
+        }
+    }
+    let hero = new Hero('yasuo.jpg', 0, 0, 450,252);
+
+    function start() {
+        if ( hero.left < (window.innerWidth - hero.width) && hero.top === 0 ) {
+            hero.moveRight()
+        } else if (hero.left >= (window.innerWidth - hero.width) && hero.top < window.innerHeight - hero.height){
+            hero.moveDown()
+        } else if ( hero.left >= 3 && hero.top >= window.innerHeight - hero.height -3){
+            hero.moveLeft()
+        } else if (hero.left === 0 && hero.top >= 0){
+            hero.moveUP()
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start)
+    }
+    start();
+</script>
+</body>
+</html>
