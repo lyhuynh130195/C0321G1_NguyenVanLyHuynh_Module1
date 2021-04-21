@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [7, 2, 5, 3, 5, 3]
+    let arrayB = [7, 2, 5, 4, 6, 3, 5, 3]
+    let arrayC = []
+
+    for (let i = 0; i < arrayB.length; i++) {
+        let dem = 0;
+        for (let j = 0; j < arrayA.length; j++) {
+            if (arrayB[i] === arrayA[j]) {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            arrayC.push(arrayB[i])
+        }
+    }
+    document.write(arrayC)
+
+</script>
+
+</body>
+</html>

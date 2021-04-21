@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="display"></div>
+
+<script>
+    // let listDrinks = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa']
+    // let listPrice = ['12000', '15000', '15000', '15000', '10000', '20000']
+    // disPlay()
+    //
+    // function disPlay() {
+    //     let table = ''
+    //     table += '<table border="1">'
+    //     table += '<tr>\n' +
+    //         '        <th>STT</th>\n' +
+    //         '        <th>Loại đồ uống</th>\n' +
+    //         '        <th>Chọn</th>\n' +
+    //         '    </tr>'
+    //     for (let i = 0; i < listDrinks.length; i++) {
+    //         table += '<tr>\n' +
+    //             '        <td>' + (1 + i) + '</td>\n' +
+    //             '        <td>' + listDrinks[i] + '</td>\n' +
+    //             '        <td><button type="button" onclick="chooseADrink(' + i + ')">Chọn</button></td>\n' +
+    //             '    </tr>'
+    //     }
+    //     table += '</table>';
+    //     document.getElementById('display').innerHTML = table;
+    // }
+    //
+    // function chooseADrink(i) {
+    //     alert('Giá của sản phẩm là :' + listPrice[i]);
+    //     let amount = prompt('Nhập số lượng bạn cần :')
+    //     alert("Số tiền cần thanh toán :" + listPrice[i] * amount)
+    // }
+
+
+    let listDrinks = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa']
+    let listPrice = ['15000', '15000', '15000', '15000', '10000', '20000']
+    disPlay()
+
+    function disPlay() {
+        let table = ''
+        table += '<table border="1">'
+        table += '<tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Loại đồ uống</th>\n' +
+            '        <th>Chọn</th>\n' +
+            '    </tr>'
+        for (let i = 0; i < listDrinks.length; i++) {
+            table += '<tr>\n' +
+                '        <td>' + (1 + i) + '</td>\n' +
+                '        <td>' + listDrinks[i] + '</td>\n' +
+                '        <td><button type="button" onclick="chooseADrink()">Chọn</button></td>\n' +
+                '    </tr>'
+        }
+        table += '</table>';
+        document.getElementById('display').innerHTML = table;
+    }
+
+    function chooseADrink() {
+        let check = true;
+
+        do {
+            let menu = prompt('Mời chọn đồ uống\n' +
+                '1.Cafe\n' + '2.Cam vắt\n' + '3.Nước ép cà rốt\n' +
+                '4.Nước ép cà chua\n' + '5.Nước loc\n' + '6.Nước dừa\n' + '7.Exit')
+            switch (menu) {
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '6':
+                    let sll1 = prompt("Nhập số lượng");
+                    alert("Số tiền thanh toán : " + sll1 *listPrice[parseInt(menu)-1]);
+                    break;
+                case '5':
+                    let sll2 = prompt("Nhập số lượng");
+                    alert("số tiền cần thanh toán : " + sll2 *listPrice[parseInt(menu)-1]);
+                    break;
+                case '7':
+                    check = false;
+                    break;
+            }
+        } while (check)
+    }
+
+</script>
+</body>
+</html>

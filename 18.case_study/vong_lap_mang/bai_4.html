@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+    let number = prompt('Nhập vào 1 số')
+    let array2 = number.split('')
+    for (let i = 0; i < array2.length; i++) {
+        switch (array2[i]) {
+            case '0':
+                array2[i] = array1[0];
+                break;
+            case '1':
+                array2[i] = array1[1];
+                break;
+            case '2':
+                array2[i] = array1[2];
+                break;
+            case '3':
+                array2[i] = array1[3];
+                break;
+            case '4':
+                array2[i] = array1[4];
+                break;
+            case '5':
+                array2[i] = array1[5];
+                break;
+            case '6':
+                array2[i] = array1[6];
+                break;
+            case '7':
+                array2[i] = array1[7];
+                break;
+            case '8':
+                array2[i] = array1[8];
+                break;
+            case '9':
+                array2[i] = array1[9];
+                break
+            default:
+                break
+        }
+    }
+    document.write(array2.join(' '))
+</script>
+</body>
+</html>

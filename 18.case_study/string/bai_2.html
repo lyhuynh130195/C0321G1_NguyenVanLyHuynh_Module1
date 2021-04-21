@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhap vao chuoi can kiem tra ")
+    let str1 = str.split('').sort()
+    for (let i = 0; i < str.length; i++) {
+        let dem = -1;
+        for (let j = 0; j < str.length; j++) {
+            if (str1[j] == str1[i]) {
+                dem++;
+            }
+        }
+        str1.splice(i, dem)
+    }
+    document.write(str1.toString())
+</script>
+</body>
+</html>

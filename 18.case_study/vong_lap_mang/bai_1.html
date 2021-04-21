@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="before"></p>
+<p id="after"></p>
+<script>
+    let n;
+    do {
+        n = prompt("Nhập độ dài mảng: ")
+    }
+    while (n <= 0 || isNaN(n))
+    let arrayNumber = [];
+    let arrayPrefixSum = [];
+
+    for (let i = 0; i < n; i++) {
+        arrayNumber.push(Math.floor(Math.random() * 10))
+    }
+    document.getElementById('before').innerHTML = 'before :' + arrayNumber + '<br>';
+
+    for (let i = 0; i < n; i++) {
+        let sum = 0;
+        for (let j = 0; j <= i; j++) {
+            sum += arrayNumber[j];
+        }
+        arrayPrefixSum.push(sum);
+    }
+    document.getElementById('after').innerHTML = 'after :' + arrayPrefixSum;
+</script>
+</body>
+</html>

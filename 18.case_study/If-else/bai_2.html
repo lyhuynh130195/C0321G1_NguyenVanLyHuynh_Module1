@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let array = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+    // let character = prompt('Nhập vào ký tự cần kiểm tra :');
+    // let index = array.indexOf(character)
+    // if (index === -1) {
+    //     alert(character + '  là phụ âm')
+    // } else {
+    //     alert(character + '  là nguyên âm')
+    // }
+
+    let array = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E']
+    let character = prompt('Nhập vào kí tự cần kiểm tra')
+    switch (character) {
+        case 'o':
+        case 'u':
+        case 'i':
+        case 'a':
+        case 'e':
+        case 'O':
+        case 'U':
+        case 'I':
+        case 'A':
+        case 'E':
+            document.write(character + ' là nguyên âm');
+            break;
+        default:
+            document.write(character + ' là phụ âm')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Quan li sinh vien</div>
+<div><input type="button" value="Add" onclick="addValue()"></div>
+<div id="display"></div>
+<script>
+    class SinhVien {
+        constructor(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
+
+        setID(id) {
+            this.id = id;
+        }
+
+        getID() {
+            return this.id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setAge(age) {
+            this.age = age;
+        }
+
+        getAge() {
+            return this.age
+        }
+    };
+
+    let listSV = [];
+    let sv1 = new SinhVien(1, 'Nguyen Van A', 18)
+    let sv2 = new SinhVien(2, 'Nguyen Van B', 19)
+    let sv3 = new SinhVien(3, 'Nguyen Van C', 20)
+    listSV.push(sv1, sv2, sv3);
+
+    disPlay()
+
+    function disPlay() {
+        let table = '';
+        table += '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>ID</th>\n' +
+            '        <th>Name</th>\n' +
+            '        <th>Age</th>\n' +
+            '        <th>Edit</th>\n' +
+            '        <th>Delete</th>\n' +
+            '    </tr>\n'
+        for (let i = 0; i < listSV.length; i++) {
+            table += '   <tr>\n' +
+                '        <td>' + (1 + i) + '</td>\n' +
+                '        <td>' + (1 + i) + '</td>\n' +
+                '        <td>' + listSV[i].getName() + '</td>\n' +
+                '        <td>' + listSV[i].getAge() + '</td>\n' +
+                '        <td>' + '<input type="button" value="Edit" onclick="editSv(' + i + ')">' + '</td>\n' +
+                '        <td>' + '<input type="button" value="Delete" onclick="deleteSv(' + i + ')">' + '</td>\n' +
+                '    </tr>'
+        }
+        table += '</table>'
+        document.getElementById('display').innerHTML = table;
+    }
+
+    function addValue() {
+        let id = prompt("nhap id");
+        let name = prompt("nhap ten:")
+        let age = prompt("nhap tuoi:")
+        let sv = new SinhVien(id, name, age);
+        listSV.push(sv);
+        disPlay()
+    }
+
+    function deleteSv(index) {
+        if (confirm("do you want to delete?")) {
+            listSV.splice(index, 1);
+            disPlay();
+        }
+    }
+
+    function editSv(index) {
+        let check = true;
+        while (check) {
+            let menu = prompt("Nhap thong tin can sua :\n" +
+                "1.ID\n" + "2.Name\n" + "3.Age\n" + "4.Exit\n")
+            switch (menu) {
+                case '1':
+                    let newID = prompt("Nhap id can sua:");
+                    listSV[index].setID(newID);
+                    break;
+                case '2':
+                    let newName = prompt("Nhap ten can sua");
+                    listSV[index].setName(newName);
+                    break;
+                case '3':
+                    let newAge = prompt("nhap vao tuoi can thay doi");
+                    listSV[index].setAge(newAge);
+                case '4':
+                    check = false;
+                    break;
+            }
+            disPlay();
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m,n;
+  while(true){
+       m=prompt("nhap chieu dai:")
+       n=prompt("nhap chieu rong:")
+      if(m>0&&n>0){
+          break
+      }
+  }
+
+   for(let i=1;i<=n;i++){
+       for(let j=1;j<=m;j++){
+           if(i==1||i==n||j==1||j==m){
+               document.write('*')
+           }else {
+               document.write("&nbsp;&nbsp")
+           }
+       }
+       document.write('<br>')
+
+   }
+</script>
+</body>
+</html>

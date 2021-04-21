@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m, n;
+    let array = [];
+    let arrayPrime = [];
+    do {
+        m = prompt('Nhap do dai mang 2 chieu :')
+        n = prompt('Nhap do dai mang 2 chieu  :')
+    } while (m <= 0 || n <= 0 || isNaN(m) || isNaN(n));
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    for (let i = 0; i < m; i++) {
+        array[i] = [];
+        for (let j = 0; j < n; j++) {
+            array[i][j] = Math.floor(Math.random() * 100);
+            if (isPrime(array[i][j])) {
+                arrayPrime.push(array[i][j]);
+            }
+        }
+    }
+    document.write('phần tử mảng 2 chiều :'+array+'<br>');
+    document.write('Các số nguyên tố :'+arrayPrime+'<br>');
+    document.write('Số lượng số nguyên tố là :'+arrayPrime.length);
+
+</script>
+</body>
+</html>

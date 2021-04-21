@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h;
+    do {
+        h = prompt("Nhập vào chiều cao của tam giác cân :")
+    } while (h <= 0 || isNaN(h))
+    let a = 2 * h - 1;
+
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= a; j++) {
+            if(i===h){
+                document.write('*')
+            }
+            if (Math.ceil(a / 2) + (i - 1) > j && j < Math.ceil(a / 2) - (i - 1) ||
+                Math.ceil(a / 2) + (i - 1) < j && j > Math.ceil(a / 2) - (i - 1)) {
+                document.write("&nbsp;&nbsp")
+            } else {
+                document.write('*')
+            }
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

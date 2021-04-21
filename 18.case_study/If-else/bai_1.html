@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><input type="text" id="salary" placeholder="'Nhập số tiền thu nhập:"></div>
+<button type="button" onclick="caculator()">Tính thuế</button>
+<p id="result"></p>
+<script>
+    function caculator() {
+        let incomeTax;
+        let salaryReceived;
+        let salary = document.getElementById('salary').value;
+        if (salary < 7000000) {
+            incomeTax = salary * 5 / 100;
+            salaryReceived = salary * 95 / 100;
+        } else if (salary <= 15000000) {
+            incomeTax = salary / 10;
+            salaryReceived = salary * 90 / 100
+        } else {
+            incomeTax = salary * 20 / 100;
+            salaryReceived = salary * 80 / 100;
+        }
+        document.getElementById('result').innerHTML = 'incomeTax :' + incomeTax + '<br>' +
+            'salaryReceived :' + salaryReceived
+    }
+</script>
+</body>
+</html>

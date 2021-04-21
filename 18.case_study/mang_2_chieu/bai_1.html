@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m, n;
+    let array = []
+    do {
+        m = prompt('Nhap do dai mang 2 chieu :')
+        n = prompt('Nhap do dai mang 2 chieu  :')
+    } while (m <= 0 || n <= 0 || isNaN(m) || isNaN(n));
+    let sum = 0;
+
+    for (let i = 0; i < m; i++) {
+        array[i] = [];
+        for (let j = 0; j < n; j++) {
+            array[i][j] = Math.floor(Math.random() * 10);
+            if (array[i][j] % 2 === 0) {
+                sum += array[i][j];
+            }
+        }
+    }
+
+    console.log(array);
+    document.write(sum);
+
+</script>
+</body>
+</html>

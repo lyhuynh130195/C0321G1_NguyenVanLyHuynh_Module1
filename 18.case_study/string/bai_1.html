@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let strings = prompt("Nhập xâu ký tự")
+
+    function chuanHoa(string) {
+        let split = string.replace(/\+/g, '').toLowerCase().split(' ');
+        let result = '';
+        for (let i = 0; i < split.length; i++) {
+            result += capitalizeFistLetter(split[i]) + ' ';
+        }
+        result = result.trim()
+        return result
+
+    }
+
+    function capitalizeFistLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1)
+    }
+
+
+    function maxLengthElement(string) {
+        let strings = chuanHoa(string);
+        let arr = strings.split(' ');
+        let max = arr[0].length;
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].length > max) {
+                max = arr[i].length
+                index = i;
+            }
+        }
+        return arr[index];
+    }
+
+
+    document.write("Trước khi chuẩn hóa :" + strings + '<br>');
+    document.write("Sau khi chuẩn hóa : " + chuanHoa(strings) + '<br>');
+    document.write("Từ có độ dài lớn nhất là :"+maxLengthElement(strings))
+
+</script>
+</body>
+</html>
