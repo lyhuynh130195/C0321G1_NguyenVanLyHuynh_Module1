@@ -7,7 +7,9 @@
 <body>
 <div>
     <h1>Xổ số codegym</h1>
+    <p>Vé số của bạn</p>
     <p id="display"></p>
+    <p>Xổ số</p>
     <p id="displayResult"></p>
     <button type="button" id="pay" onclick="buyVietlot()">Mua vé</button>
     <button type="button" id="check" onclick="checkResult()">Xem kết quả</button>
@@ -77,8 +79,9 @@
 
     }
 
-    let vietlotCodeGym = new VietLotCodeGym(15, 20, 36, 47, 55, 76)
-    let result = new VietLotCodeGym(0, 0, 0, 0, 0, 0)
+    let vietlotCodeGym = new VietLotCodeGym(0, 0, 0, 0, 0, 0);
+    let result = new VietLotCodeGym(0, 0, 0, 0, 0, 0);
+
 
     function buyVietlot() {
         let buy = prompt('Bạn có 2 sự lựa chọn\n' +
