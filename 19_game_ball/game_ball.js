@@ -1,5 +1,5 @@
 let canvas, ctx;
-let score=0;
+let score = 0;
 canvas = document.getElementById('canvas');
 ctx = canvas.getContext('2d');
 
@@ -16,30 +16,9 @@ class Ball {
         this.y += this.speedY;
         this.x += this.speedX;
     }
-
-
-    moveCollision() {
-        if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
-            this.speedX = -this.speedX;
-        }
-        if (this.y - this.radius <= 0) {
-            this.speedY = -this.speedY;
-        }
-        if (this.y + this.radius > paddle.y + paddle.height) {
-            document.location.reload()
-        }
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.fillStyle = 'red';
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fill()
-    }
 }
 
 let ball = new Ball(100, 100, 10, 5, 5);
-
 
 class Paddle {
     constructor(x, y, width, height, speed) {
@@ -51,18 +30,43 @@ class Paddle {
         this.isMoveLeft = false;
         this.speed = speed;
     }
+}
+let paddle = new Paddle(100, 500, 80, 15, 25);
 
-    drawPaddle() {
-        ctx.beginPath();
-        ctx.rect(this.x, this.y, this.width, this.height);
-        ctx.fillStyle = "#1B5E20";
-        ctx.fill();
-        ctx.closePath();
-    }
-
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddle.x, paddle.y, paddle.width, paddle.height);
+    ctx.fillStyle = "#1B5E20";
+    ctx.fill();
+    ctx.closePath();
 }
 
-let paddle = new Paddle(100, 500, 80, 15, 25);
+function drawBall() {
+    ctx.beginPath();
+    ctx.fillStyle = 'red';
+    ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+    ctx.fill()
+    ctx.closePath();
+}
+
+function moveCollision() {
+    if (ball.x + ball.radius >= canvas.width || ball.x - ball.radius <= 0) {
+        ball.speedX = -ball.speedX;
+    }
+    if (ball.y - ball.radius <= 0) {
+        ball.speedY = -ball.speedY;
+    }
+    if (ball.y + ball.radius > canvas.height) {
+        document.location.reload()
+    }
+
+    if (ball.y + ball.radius === paddle.y - paddle.height &&
+        ball.x+ball.radius >= paddle.x && ball.x-ball.radius <= paddle.x + paddle.width) {
+        ball.speedY = -ball.speedY;
+    }
+}
+
+
 //addEventListener keydown,keyup >>> ball move smooth
 document.addEventListener('keydown', function (event) {
     if (event.keyCode === 39) {
@@ -79,7 +83,7 @@ document.addEventListener('keyup', function (event) {
     }
 })
 
-function checkBallAndPaddle() {
+function checkPaddle() {
     if (paddle.isMoveLeft === true) {
         paddle.x -= paddle.speed;
     } else if (paddle.isMoveRight === true) {
@@ -90,42 +94,25 @@ function checkBallAndPaddle() {
     } else if (paddle.x + paddle.width > canvas.width) {
         paddle.x = canvas.width - paddle.width;
     }
-    if (ball.y + ball.radius > paddle.y - paddle.height &&
-        ball.x > paddle.x && ball.x < paddle.x + paddle.width) {
-        ball.speedY = -ball.speedY;
-        score+=1;
-    }
-    if(ball.x===canvas.width&&ball.y===paddle.y-paddle.height){
-        ball.speedX=-ball.speedX;
-        ball.speedY=-ball.speedY;
-    }
-    if(ball.x===canvas.width-canvas.width&&ball.y===paddle.y-paddle.height){
-        ball.speedX=-ball.speedX;
-        ball.speedY=-ball.speedY;
-    }
 }
 
 function disPlayScore() {
     if (ball.y + ball.radius == paddle.y - paddle.height &&
         ball.x >= paddle.x && ball.x <= paddle.x + paddle.width) {
         score += 1;
-        if(score>20){
-            ball.speedX=10;
-            ball.speedY=10;
-        }
-        document.getElementById('score').innerHTML='Score :'+score;
+        document.getElementById('score').innerHTML = 'Score :' + score;
     }
 }
 
-function upDate() {
+function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ball.draw();
-    paddle.drawPaddle();
+    moveCollision();
+    checkPaddle();
     ball.move();
-    ball.moveCollision();
-    checkBallAndPaddle();
+    drawBall();
+    drawPaddle();
     disPlayScore();
 }
 
 
-setInterval('upDate()', 23)
+setInterval('draw()', 20)
