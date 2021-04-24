@@ -16,6 +16,19 @@ class Ball {
         this.y += this.speedY;
         this.x += this.speedX;
     }
+
+    setSpeed() {
+        if (this.speedX > 0) {
+            this.speedX++
+        } else {
+            this.speedX--
+        }
+        if (this.speedY > 0) {
+            this.speedY++
+        } else {
+            this.speedY--
+        }
+    }
 }
 
 let ball = new Ball(100, 100, 10, 5, 5);
@@ -31,7 +44,8 @@ class Paddle {
         this.speed = speed;
     }
 }
-let paddle = new Paddle(100, 500, 80, 15, 25);
+
+let paddle = new Paddle(100, 500, 80, 15, 20);
 
 function drawPaddle() {
     ctx.beginPath();
@@ -60,10 +74,21 @@ function moveCollision() {
         document.location.reload()
     }
 
-    if (ball.y + ball.radius === paddle.y - paddle.height &&
-        ball.x+ball.radius >= paddle.x && ball.x-ball.radius <= paddle.x + paddle.width) {
+    if (ball.y + ball.radius === paddle.y &&
+        ball.x  >= paddle.x && ball.x  <= paddle.x + paddle.width) {
         ball.speedY = -ball.speedY;
-        score+=1;
+        stylePlayer();
+        score += 1;
+        ball.setSpeed();
+    }
+}
+
+function stylePlayer() {
+    if (paddle.isMoveRight === true && ball.speedX < 0) {
+        ball.speedX = -ball.speedX;
+    }
+    if (paddle.isMoveLeft === true && ball.speedX > 0) {
+        ball.speedX = -ball.speedX;
     }
 }
 
@@ -90,6 +115,7 @@ function checkPaddle() {
     } else if (paddle.isMoveRight === true) {
         paddle.x += paddle.speed
     }
+
     if (paddle.x < 0) {
         paddle.x = 0;
     } else if (paddle.x + paddle.width > canvas.width) {
@@ -98,7 +124,7 @@ function checkPaddle() {
 }
 
 function disPlayScore() {
-        document.getElementById('score').innerHTML = 'Score :' + score;
+    document.getElementById('score').innerHTML = 'Score :' + score;
 }
 
 function draw() {
