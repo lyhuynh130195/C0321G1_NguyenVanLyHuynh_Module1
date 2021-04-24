@@ -1,6 +1,11 @@
 .canvas {
     border: 1px solid;
-    margin: 0 auto;
+    margin: auto;
     display: block;
     background-color: #E8F5E9;
+}
+.score{
+    margin:480px;
+    color: #d61b06;
+
 }
