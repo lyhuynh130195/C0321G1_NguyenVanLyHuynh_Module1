@@ -63,6 +63,7 @@ function moveCollision() {
     if (ball.y + ball.radius === paddle.y - paddle.height &&
         ball.x+ball.radius >= paddle.x && ball.x-ball.radius <= paddle.x + paddle.width) {
         ball.speedY = -ball.speedY;
+        score+=1;
     }
 }
 
@@ -97,11 +98,7 @@ function checkPaddle() {
 }
 
 function disPlayScore() {
-    if (ball.y + ball.radius == paddle.y - paddle.height &&
-        ball.x >= paddle.x && ball.x <= paddle.x + paddle.width) {
-        score += 1;
         document.getElementById('score').innerHTML = 'Score :' + score;
-    }
 }
 
 function draw() {
